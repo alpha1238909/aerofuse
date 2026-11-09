@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.1.0",
+  "summary": {
+    "apogee_m": 8.202711169569247,
+    "flight_time_s": 1.1,
+    "max_absolute_vertical_velocity_mps": 8.191832117738366,
+    "events_detected": ["launch", "burnout", "apogee"]
+  },
+  "baseline_pressure_pa": 101325.0,
+  "events": [
+    {"name": "launch", "time_s": 0.3, "confidence": 0.75, "details": "Sustained upward net acceleration detected."},
+    {"name": "burnout", "time_s": 0.4, "confidence": 0.72, "details": "Acceleration fell below gravity-compensated coast threshold."},
+    {"name": "apogee", "time_s": 0.9, "confidence": 0.78, "details": "Estimated vertical velocity crossed downward."}
+  ],
+  "anomalies": [],
+  "states": [
+    {"time_s": 0.0, "altitude_m": 0.0, "vertical_velocity_mps": 0.0, "phase": "pad", "barometric_altitude_m": 0.0},
+    {"time_s": 0.1, "altitude_m": 0.10101710510969245, "vertical_velocity_mps": 0.9506951518024523, "phase": "pad", "barometric_altitude_m": 0.41628146943557764},
+    {"time_s": 0.2, "altitude_m": 0.5321766234121179, "vertical_velocity_mps": 2.415612268007222, "phase": "pad", "barometric_altitude_m": 2.0815737023035643},
+    {"time_s": 0.3, "altitude_m": 1.5504249812724815, "vertical_velocity_mps": 4.844335601575188, "phase": "ascent", "barometric_altitude_m": 5.412956981835599},
+    {"time_s": 0.4, "altitude_m": 3.0883582017700606, "vertical_velocity_mps": 6.720773842944068, "phase": "coast", "barometric_altitude_m": 8.745405981055374},
+    {"time_s": 0.5, "altitude_m": 4.832848773099919, "vertical_velocity_mps": 6.412022923959119, "phase": "coast", "barometric_altitude_m": 11.245442567536038},
+    {"time_s": 0.6, "altitude_m": 6.352298469126739, "vertical_velocity_mps": 5.678534353776733, "phase": "coast", "barometric_altitude_m": 11.745521900689008},
+    {"time_s": 0.7, "altitude_m": 7.487010480589472, "vertical_velocity_mps": 4.263882723337804, "phase": "coast", "barometric_altitude_m": 11.245442567536038},
+    {"time_s": 0.8, "altitude_m": 8.121322905202904, "vertical_velocity_mps": 2.06406204082454, "phase": "coast", "barometric_altitude_m": 9.995349267171079},
+    {"time_s": 0.9, "altitude_m": 8.202711169569247, "vertical_velocity_mps": -0.8640694679294547, "phase": "descent", "barometric_altitude_m": 8.328791548559657},
+    {"time_s": 1.0, "altitude_m": 7.758507685387281, "vertical_velocity_mps": -4.301404159092936, "phase": "descent", "barometric_altitude_m": 6.662500426594925},
+    {"time_s": 1.1, "altitude_m": 6.763442381240077, "vertical_velocity_mps": -8.191832117738366, "phase": "descent", "barometric_altitude_m": 4.580011280491048}
+  ],
+  "metadata": {"model": "alpha-beta barometric/inertial observer", "input_sample_count": 12, "processed_sample_count": 12}
+}
