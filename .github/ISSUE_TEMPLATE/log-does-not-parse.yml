@@ -1,0 +1,37 @@
+name: My telemetry log does not parse
+description: Help us support a real device format without guessing at private data.
+title: "[log format]: "
+labels: ["log-format"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please remove private location, identity, or credential data before attaching any log.
+  - type: input
+    id: device
+    attributes:
+      label: Device and sensors
+      description: For example, ESP32 + MPU6050 + BMP280.
+    validations:
+      required: true
+  - type: textarea
+    id: header
+    attributes:
+      label: CSV header and 5–10 representative rows
+      description: Paste a small sanitized excerpt, including the header.
+      render: csv
+    validations:
+      required: true
+  - type: dropdown
+    id: acceleration-unit
+    attributes:
+      label: Vertical-acceleration unit
+      options: ["m/s²", "g", "I do not know"]
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect AeroFuse to do?
+    validations:
+      required: true
