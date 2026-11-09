@@ -1,6 +1,6 @@
 # AeroFuse
 
-![CI configured](https://img.shields.io/badge/CI-configured-2ea44f) ![License](https://img.shields.io/badge/license-MIT-2ea44f) ![Python](https://img.shields.io/badge/python-3.10%2B-3776ab)
+![Tests](https://github.com/alpha1238909/aerofuse/actions/workflows/test.yml/badge.svg) ![License](https://img.shields.io/badge/license-MIT-2ea44f) ![Python](https://img.shields.io/badge/python-3.10%2B-3776ab)
 
 **Turn raw ESP32 and Arduino logs into calibrated flight states, labelled matrices, engineering calculations, and reproducible evidence.**
 
